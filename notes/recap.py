@@ -11,3 +11,7 @@ print(0.01) # float
 print(True) 
 print(False) # boolean
 print(None) #none - blank/null data
+
+# git add .
+# git commit - m ""
+# git push -u origin main
