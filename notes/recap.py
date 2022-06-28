@@ -148,8 +148,11 @@ print(len(fav_music))
 fav_music.append("RHCP - Californication")
 print(fav_music)  # add to list
 
-fav_music.pop(0)
-print(fav_music)
+fav_music.pop()
+print(fav_music) # removes item from list, accepts index position in parameters
+
+
+
 
 
 
