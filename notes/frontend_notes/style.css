@@ -1,0 +1,107 @@
+body{
+    background-color: rgb(255, 248, 183);
+/* used to change entire background on site */
+}
+
+/* selector {
+    property: value:
+    property: value;
+} */
+
+p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-size: 25px;
+    font-family: fantasy;
+    font-style: italic;
+    justify-content: center;
+    background-color: rgba(199, 199, 199, 0.239);
+    border: 3px dashed black;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 45px;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: 200;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 0;
+    padding-bottom: 20px;
+    background-color: rgba(199, 199, 199, 0.239);
+    color:  rgb(46, 0, 152);;
+    border: 3px dashed black;
+}
+
+.boxes {
+    padding-top: 0.5em;
+}
+
+.box1, .box2{
+    padding-right: 7em;
+}
+
+h2, h3, h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 30px;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.pic1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    height: 2.5em;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+span a:hover{
+    background-color: rgba(187, 187,0, 0);
+    color: rgb(46, 0, 152);
+}
+
+span a {
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+ul a {
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: 25;
+    padding-right: 1.5em;
+    font-size: 20px;
+    color: black;
+}
+
+ul a:hover{
+    color: rgb(46, 0, 152);
+}
