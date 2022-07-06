@@ -1,0 +1,84 @@
+
+/* ACTIVITY 1 */
+
+/* body {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:500px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+.desktop, .mobile {
+    display: none;
+}
+
+@media (orientation:landscape) {
+    .desktop {
+        display:inline-block;
+    }
+}
+
+@media (orientation:portrait) {
+    .mobile {
+        display: inline-block;
+    }
+} */
+
+/* ACTIVITY 2 */
+
+body {
+    background-color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+@media (max-width:500px) {
+ul li, .person_1, .person_2, .person_3, .person_4{
+    display: flexbox;
+    background-color: lightblue;
+    margin-top: 5%;
+    width: 50%;
+    text-align: left;
+}
+}
+
+img {
+    display: none;
+}
+
+@media (min-width:501px){
+    img {
+        display: inline-block;
+        width: 50%;
+        padding-left: 25%;
+    }
+}
+
+@media (min-width:501px) {
+ul {
+    display: inline-flex;
+    flex-direction: row;
+    width: 97%;
+}
+}
+
+@media (min-width:501px) {
+ul li {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 50%;
+    margin-right: 3%;
+    text-align: center;
+}
+}
+
+
+

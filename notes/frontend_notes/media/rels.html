@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rels.css">
+    <title>Relative Fonts - CSS Reference</title>
+</head>
+
+<body>
+    Some body text
+    <h1> Relative Units in Font Sizing</h1>
+    <div class="content">
+        <h1>EM</h1>
+        <p> EM - The font is relative to its parent font size.</p>
+        <p> On this page, the body font is set to 2.5em - 2.5x the size of the browser's default size. H1's parent is
+            body - so heading 1 is 1.5 x the body size!<br> Content is set to 1em - and its parent is body, so content
+            is the size of body. </p>
+        <div class="emexample">
+            Hello! This is set to 0.5em - it's taking that relative size from the div above
+            <div class="emexample">
+                Hello! This is set to 0.5em - it's taking that relative size from the div above
+            </div>
+        </div>
+        <hr>
+        <h1>REM</h1>
+        <p> REM - The font is relative to the browser's root size.</p>
+        <div class="remexample">
+            Hello! This is set to 0.5rem - half the size of the browser's default font
+            <div class="remexample2">
+                Hello! This is set to 1.5rem - 1.5 x the size of the browser's default font
+            </div>
+        </div>
+        <hr>
+        <h1>Viewport</h1>
+        <p> Takes up space realitive to the viewport size - this will size with a browser!</p>
+        <div class="vexample">
+            Hello! This is set to 1.5 vw - try scaling your browser!
+        </div>
+</body>
+
+</html>

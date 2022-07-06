@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <title>My First Flask App</title>
+</head>
+<body>
+    <h1>Welcome to my Flask App!</h1>
+    <nav>
+        <a href="{{ url_for('my_view.index')}}">Return to Home</a>
+        <a href="{{ url_for('my_view.james')}}">Return to James' Page</a>
+        <a href="{{ url_for('my_view.about')}}">Return to About Me</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="flex-container-h">
+    <div>
+    <h1>JavaScript Events</h1>
+    <div class="flex-container-h">
+        <button>Dark Mode</button>
+    </div>
+    <h2>Innovate Coding</h2>
+    <p id="intro-text">This is an interactive website for demonstrating a selection of events in JavaScript.</p>
+
+    <br>
+
+    <div class="main-box">
+    <h3 class="main-title">onclick Events</h3>
+    <p class="main-text">This is an event that occurs as a result of the user 'clicking' a specific element.</p>
+    <p onclick="changeText(this)" class="example-text">click this text to change it</p>
+    <div class="flex-container-h2">
+    <button onclick="displayDate(date)" class="example-button">Display Date</button>
+    <p class="example-text" id="date"></p>
+    </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="main-box">
+    <h3 class="main-title">onload Events</h3>
+    <p class="main-text">This is an event that occurs as soon as the user has loaded the web page.</p>
+    <p class="example-text" id="cookie"></p>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="main-box">
+    <h3 class="main-title">Mouse Events</h3>
+    <p class="main-text">This is an event that occurs when the user moves their cursor over a specific element.</p>
+    <div class="flex-container-h3">
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="colour-box example-text">
+        </div>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="colour-box example-text">
+        </div>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="colour-box example-text">
+        </div>
+    </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="main-box">
+    <h3 class="main-title">Extra:</h3>
+        <p class="main-text">Additional features that can be used in developing a website with JavaScript.</p>
+        <h4 class="main-text">Alert</h4>
+
+        <p class="main-text">An alert is used to notify the user via a pop-up window.</p>
+        <button onclick="sendAlert()" class="example-button">Display Host Name</button>
+        <h4 class="main-text">Toggle</h4>
+        <p class="main-text">TBC</p>
+    </div>
+
+    <br>
+    <br>
+
+    </div>
+    </div>
+{% endblock %}

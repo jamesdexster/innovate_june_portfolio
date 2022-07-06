@@ -1,0 +1,126 @@
+@font-face {
+    font-family: gilroyLight;
+    src: url(./assets/Gilroy-Light.otf);
+}
+@font-face {
+    font-family: gilroyExtraBold;
+    src: url(./assets/Gilroy-ExtraBold.otf);
+}
+
+body {
+    background-color: rgba(39, 78, 155, 1);
+}
+
+h1 {
+    font-family: gilroyExtraBold;
+    font-size: 54px;
+    color: rgba(245, 179, 47, 1);
+    text-align: center;
+}
+
+h2 {
+    font-family: gilroyExtraBold;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-family: gilroyExtraBold;
+    font-size: 24px;
+}
+
+h4 {
+    font-family: gilroyExtraBold;
+    font-size: 18px;
+}
+
+p {
+    font-family: gilroyLight;
+    font-size: 18px;
+}
+
+button {
+    font-family: gilroyExtraBold;
+    font-size: 14px;
+}
+
+#intro-text {
+    color: #fff;
+    text-align: center;
+}
+
+.flex-container-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-container-h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flex-container-h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-container-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-box {
+    padding: 10px;
+    width: 800px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.main-title {
+    color: rgba(245, 179, 47, 1);
+}
+
+.main-text {
+    color: rgba(39, 78, 155, 1);
+}
+
+.example-text {
+    color: #000;
+    font-family: monospace;
+}
+
+.example-button {
+    color: rgba(39, 78, 155, 1);
+    border-radius: 25px;
+    background-color: #fff;
+    border-color: #000;
+    box-shadow: 0 4px rgba(39, 78, 155, 1);
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.example-button:hover {
+    background-color: rgba(245, 179, 47, 1);
+}
+
+.example-button:active {
+    background-color: rgba(245, 179, 47, 1);
+    box-shadow: 0 2px rgba(39, 78, 155, 1);
+    transform: translateY(2px);
+}
+
+.colour-box {
+    border-radius: 25px;
+    background-color: rgba(245, 179, 47, 1);
+    border-color: #000;
+    border-style: solid;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}

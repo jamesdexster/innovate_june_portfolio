@@ -1,0 +1,77 @@
+/* body {
+    color: red;
+} */
+
+/* @media (max-width: 500px) {
+    body {
+        color: blue;
+    }
+} */
+
+/* inspect element can be used to view changes */
+
+/* @media (orientation:portrait) {
+    .title {
+        color: yellow;
+        background-color: black;
+        text-align: center;
+        padding: 5%;
+    }
+} */
+
+/* These changes take place when the veritcal height is longer then the width */
+
+/* @media (orientation:landscape) {
+    .subtitle {
+        color: green;
+        background-color: orange;
+        text-align: center;
+        padding: 5%;
+    }
+} */
+
+/* These changes take place when the width is longer then the height */
+/* multiple media quieries can be used at once */
+
+/* absolute(fixed)
+-px
+
+relative(dependant on screen size)
+-em
+-%
+-rem
+-vw & vh */
+
+/* default body font size is 16px */
+/* EM is relative to its parents size */
+/* REM is relative to bodys root size (16px by default) */
+/* Viewport is relative to viewport size - this will  change with a browsers viewing size */
+
+.desktop, .mobile {
+    display: none;
+}
+
+@media (orientation:landscape) {
+    .desktop {
+        display:inline-block;
+    }
+}
+
+@media (orientation:portrait) {
+    .mobile {
+        display: inline-block;
+    }
+}
+
+body{
+    background-color: rgba(0, 0, 255, 0.413);
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+
+

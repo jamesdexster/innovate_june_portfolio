@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'main.css')}}">
+    <script href="{{url_for('static', filename = 'app.js')}}"></script>
+    <title>JS Companion Website</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('my_view.index')}}">Return to Home</a>
+        <a href="{{ url_for('my_view.page1')}}">Return to Page1</a>
+        <a href="{{ url_for('my_view.page2')}}">Return to Page2</a>
+        <a href="{{ url_for('my_view.page3')}}">Return to Page3</a>
+        <a href="{{ url_for('my_view.page4')}}">Return to Page4</a>
+        <a href="{{ url_for('my_view.page5')}}">Return to Page5</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
