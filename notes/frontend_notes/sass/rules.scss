@@ -1,0 +1,10 @@
+$mainColour: #ff4400;
+$headingFont: "Poiret One", cursive;
+$contentFont:  "Josefin Sans", sans-serif;
+
+@mixin heading($special){ 
+    font-family:$headingFont; 
+    color: $special;
+    text-align: center;
+    margin-top: 0px;
+}

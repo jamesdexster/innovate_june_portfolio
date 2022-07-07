@@ -2,7 +2,8 @@
 
 /* imported font families: "Poiret One", cursive; font-family: "Josefin Sans", sans-serif;    */
 
-$mainColour: #ed254e;
+@import 'rules';
+
 
 /* elements */
 
@@ -12,23 +13,18 @@ body {
 }
 
 h1 {
-  font-family: "Poiret One", cursive;
-  color: #ed254e;
-  text-align: center;
-  margin-top: 0px;
+  @include heading(hotpink);
   font-size: 3em;
 }
 
 h3 {
-  font-family: "Poiret One", cursive;
-  color: #ed254e;
-  text-align: center;
-  margin-top: 0px;
+  @include heading(purple);
+  color: #4f4db3;
   font-size: 2em;
 }
 
 button {
-  background-color: #ed254e;
+  background-color: $mainColour;
   color: #eccee7;
   border: #4f4db3 2px solid;
   padding: 15px;
@@ -37,7 +33,7 @@ button {
 button:hover {
   background-color: #4f4db3;
   color: #eccee7;
-  border: #ed254e 2px solid;
+  border: $mainColour 2px solid;
   padding: 15px;
 }
 
@@ -56,13 +52,13 @@ nav a {
 }
 
 nav a:hover {
-  color: #ed254e;
+  color: $mainColour;
   text-decoration: none;
 }
 
 /* classes */
 .content {
-  font-family: "Josefin Sans", sans-serif;
+  font-family:$contentFont;
   color: #011936;
   font-size: 1.1em;
   width: 70%;
@@ -75,12 +71,12 @@ nav a:hover {
 }
 
 .inner {
-  font-family: "Josefin Sans", sans-serif;
+  font-family:$contentFont;
   color: #011936;
   font-size: 1.1em;
   width: 60%;
   background-color: #eccee7;
-  border-top: #ed254e 10px solid;
+  border-top: $mainColour 10px solid;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
@@ -89,16 +85,6 @@ nav a:hover {
 }
 
 .inner2 {
-  font-family: "Josefin Sans", sans-serif;
-  color: #011936;
-  font-size: 1.1em;
-  width: 60%;
-  background-color: #eccee7;
-  border-top: #ed254e 10px solid;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 1%;
+  @extend .inner;
   border-bottom: #4f4db3 10px solid;
 }
